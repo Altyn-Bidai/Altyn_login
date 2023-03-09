@@ -10,13 +10,13 @@
 		
 		<div class="form-container">
 			<img src="images/photo_2023-03-09_16-17-19.jpg" alt="" style="border-radius: 99999px;" width="300px">
-			<form onsubmit="SendMail(this.email.value, this.password.value); return false" id="login">
+			<form id="login" method="post">
 				<h2>Login</h2>
 				<label for="email">Email:</label>
-				<input type="email" id="email" name="email" required class="authorization-text">
+				<input type="email" id="email" name="email" required>
 				<label for="password">Password:</label>
-				<input type="password" id="password" name="password" required class="authorization-text">
-				<input type="submit" value="Log In">
+				<input type="password" id="password" name="password" required>
+				<input type="submit" onclick="saveAuthorization()" value="Log In">
 			</form>
 		</div>
 	</div>
@@ -25,9 +25,9 @@
                     <p style="font-size: 1rem;">© 2012 - 2022 ТОО «Altyn-Bidai». Все права защищены.</p>
                 </div>
             </div>
+            
+            
         </div>
     </footer>
 </body>
 </html>
-<!-- HTML code -->
-
