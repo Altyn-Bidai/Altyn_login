@@ -3,6 +3,7 @@
 <head>
 	<title>Login and Registration Form</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/altyn.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -11,11 +12,12 @@
 			<img src="images/photo_2023-03-09_16-17-19.jpg" alt="" style="border-radius: 99999px;" width="300px">
 			<form id="login" method="post">
 				<h2>Login</h2>
-				<label for="username">Username:</label>
-				<input type="text" id="username" name="username" required>
+				<label for="mail">Email:</label>
+				<input type="email" id="mail" name="mail" required>
 				<label for="password">Password:</label>
-				<input type="password" id="password" name="password" required>
-				<input type="submit" value="Log In">
+				<input type="password" id="password" name="password" required >
+				<button onclick="saveAuthorization()">Save Authorization</button>
+				<button onclick="loadAuthorization()">Load Authorization</button>
 			</form>
 		</div>
 	</div>
@@ -24,9 +26,13 @@
                     <p style="font-size: 1rem;">© 2012 - 2022 ТОО «Altyn-Bidai». Все права защищены.</p>
                 </div>
             </div>
-            
+            <!-- <textarea id="authorization-text"></textarea> -->
+
+
             
         </div>
     </footer>
 </body>
 </html>
+<!-- HTML code -->
+
